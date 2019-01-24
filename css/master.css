@@ -48,7 +48,8 @@ div#hc--logo {
 
 .hc--header-aside-info .info-c .subtitle {
     font-size: 25px;
-    font-family: 'Yesteryear', cursive;
+    font-weight: 600;
+    color: #795a43;
 }
 
 /* Navigation */
@@ -159,13 +160,47 @@ MAIN CONTENT
     font-size: 20px;
 }
 
+.about-wrap .about-cont .btn-view-more {
+    display: inline-block;
+    padding: 0 50px;
+    line-height: 35px;
+    text-decoration: none;
+    border: 1px solid #795A43;
+    margin: 50px 0;
+}
+
 /* Row Bannr */
 .hc--h-banner {
     width: 100%;
-    min-width: 400px;
-    height: 400px;
+    overflow: hidden;
+    background: url(../images/banner.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    padding: 150px 0 160px;
+    text-align: center;
+    z-index: 1;
+}
+.hc--h-banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    opacity: .7;
+    height: 100%;
+    z-index: -1;
 }
 
+.hc--h-banner .hcj-team {
+    font-size: 40px;
+    margin: 0 0 15px;
+}
+
+.hc--h-banner .subtitle {
+    font-size: 30px;
+}
 
 /* Row About */
 .about-wrap .about-image {
@@ -182,6 +217,18 @@ MAIN CONTENT
     background-size: cover;
     z-index: 1;
     position: relative;
+}
+
+.hc--company-dynamics::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    z-index: -1;
 }
 
 /* News List */
@@ -215,10 +262,14 @@ MAIN CONTENT
 
 .news-list .news-item .text .title {
     font-size: 18px;
+    height: 29px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .news-list .news-item .meta {
-    margin: 5px 0;
+    margin: 0 0 5px;
 }
 
 /* Producs */
@@ -231,7 +282,7 @@ MAIN CONTENT
 
 .pr-big-c img {
     width: 100%;
-    min-height: 370px;
+    min-height: 335px;
 }
 
 .products .pr-list {
@@ -313,6 +364,10 @@ MAIN CONTENT
 .news-image {
     float: right;
     width: 40%;
+    min-height: 430px;
+}
+
+.news-image img {
     min-height: 430px;
 }
 
