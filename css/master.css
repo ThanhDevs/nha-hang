@@ -110,37 +110,29 @@ MAIN CONTENT
     color: #fff;
 }
 
-/* Row Bannr */
-.hc--h-banner {
-    width: 100%;
-    min-width: 400px;
-    height: 400px;
-}
-
-/* Row About */
-.hc--about-section {
+/* Reset box */
+.hc--about-section,
+.hc--industry-news {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #F9F1DA;
 }
 
-.about-wrap {
+.about-wrap,
+.news-wrap {
     background-color: #fff;
     overflow: hidden;
 }
 
-.about-wrap .about-image {
-    float: left;
-    width: 40%;
-}
-
-.about-wrap  .about-cont {
+.about-wrap  .about-cont,
+.news-wrap .news-cont {
     overflow: hidden;
     padding: 0 30px;
     position: relative;
 }
 
-.about-wrap .about-cont .icon {
+.about-wrap .about-cont .icon,
+.news-wrap .news-cont .icon {
     position: absolute;
     top: 0;
     right: 30px;
@@ -149,19 +141,37 @@ MAIN CONTENT
     z-index: 1;
 }
 
-.about-wrap .about-cont .title-wrap {
+.about-wrap .about-cont .title-wrap,
+.news-wrap .news-cont .title-wrap {
     padding: 40px 0 5px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 30px;
     border-bottom: 1px solid #dbdbdb;
 }
 
-.about-wrap .about-cont .title-wrap .title {
+.about-wrap .about-cont .title-wrap .title,
+.news-wrap .news-cont .title-wrap .title {
     margin-bottom: 5px
 } 
 
-.about-wrap .about-cont .title-wrap .subtitle {
+.about-wrap .about-cont .title-wrap .subtitle,
+.news-wrap .news-cont .title-wrap .subtitle  {
     font-size: 20px;
+}
+
+/* Row Bannr */
+.hc--h-banner {
+    width: 100%;
+    min-width: 400px;
+    height: 400px;
+}
+
+
+/* Row About */
+.about-wrap .about-image {
+    float: left;
+    width: 40%;
+    min-height: 430px;
 }
 
 /* Row Company Dinamics */
@@ -173,13 +183,21 @@ MAIN CONTENT
 }
 
 /* News List */
+.news-list {
+    margin: 0 0 10px;
+}
+
 .news-list .news-item {
     background: #fff;
     float: left;
-    width: calc(1000px / 2 - 30px);
-    margin: 0 15px 30px;
+    width: calc((100% - 30px) / 2);
+    margin: 0 30px 30px 0;
     padding: 15px;
     box-sizing: border-box;
+}
+
+.news-list .news-item:nth-child(even) {
+    margin-right: 0;
 }
 
 .news-list .news-item .img {
@@ -199,4 +217,107 @@ MAIN CONTENT
 
 .news-list .news-item .meta {
     margin: 5px 0;
+}
+
+/* Producs */
+.products .pr-big-c,
+.products .pr-list {
+    width: calc((100% - 30px) / 2);
+    float: left;
+    margin: 0 30px 0 0;
+}
+
+.pr-big-c img {
+    width: 100%;
+    min-height: 370px;
+}
+
+.products .pr-list {
+   margin-right: 0;  
+}
+
+.products .pr-list .pr-list-item {
+    float: left;
+    width: calc((100% - 30px) / 2);
+    margin: 0 30px 30px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.products .pr-list .pr-list-item:nth-child(even) {
+    margin-right: 0;
+}
+
+.products .pr-list .pr-list-item .text {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+}
+
+.products .pr-list .pr-list-item .text::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+}
+
+.products .pr-list .pr-list-item .text,
+.products .pr-list .pr-list-item .text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.products .pr-list .pr-list-item .text h3 {
+    margin-top: 40px;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.products .pr-list .pr-list-item .text .readmore {
+    margin: 5px 0 0 ;
+    color: #eb4035;
+}
+
+.products .pr-list .pr-list-item:hover > .text,
+.products .pr-list .pr-list-item:hover > .text::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.products .pr-list .pr-list-item:hover > .text::after {
+    opacity: .8;
+}
+
+/* News */
+.news-image {
+    float: right;
+    width: 40%;
+    min-height: 430px;
+}
+
+.news-wrap .news-cont .icon {
+    left: 36px;
+}
+
+.news-wrap .news-cont .title-wrap {
+    text-align: right;
 }
