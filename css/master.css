@@ -1,0 +1,173 @@
+@import 'resethtml5.css';
+@import url('https://fonts.googleapis.com/css?family=Yesteryear');
+
+body {
+    font-family: serif;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* 
+--------------------------------
+HEADER
+--------------------------------
+*/
+header#hc--header {
+    padding: 8px 0;
+}
+
+/* Logo */
+div#hc--logo { 
+    float: left; 
+}
+
+/* header aside */
+.hc--header-aside {
+    float: right;
+}
+
+.hc--header-aside-info {
+    margin: 13px 0 0;
+}
+
+.hc--header-aside-info .info-wrap {
+    display: table;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hc--header-aside-info .info-i,
+.hc--header-aside-info .info-c {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.hc--header-aside-info .info-i {
+    padding-right: 10px;
+}
+
+.hc--header-aside-info .info-c .subtitle {
+    font-size: 25px;
+    font-family: 'Yesteryear', cursive;
+}
+
+/* Navigation */
+.hc--navigation { 
+    background-color: #000000; 
+    color: #fff; 
+}
+
+nav#hc--main-nav ul { 
+    list-style: none; 
+}
+
+nav#hc--main-nav ul li { 
+    position: relative; 
+}
+
+nav#hc--main-nav > ul > li { 
+    display: inline-block;  
+    line-height: 50px; 
+}
+
+nav#hc--main-nav > ul > li > a { 
+    color: #fff; 
+    text-decoration: none; 
+    display: block;
+    padding: 0 15px; 
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* 
+--------------------------------
+MAIN CONTENT
+--------------------------------
+*/
+
+/* Reset title */
+.hc--heading-wrap {
+    text-align: center;
+    font-size: 30px;
+    background: url(../images/title-bottom-line.png) no-repeat bottom center;
+    margin: 0 0 30px;
+}
+
+.hc--heading-wrap .title {
+    font-size: 20px;
+}
+
+.hc--heading-wrap .subtitle {
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+
+.hc--heading-wrap.text-white,
+.hc--heading-wrap.text-white .title,
+.hc--heading-wrap.text-white .subtitle {
+    color: #fff;
+}
+
+/* Row Bannr */
+.hc--h-banner {
+    width: 100%;
+    min-width: 400px;
+    height: 400px;
+}
+
+/* Row About */
+.hc--about-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #F9F1DA;
+}
+
+.about-wrap {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.about-wrap .about-image {
+    float: left;
+    width: 40%;
+}
+
+.about-wrap  .about-cont {
+    overflow: hidden;
+    padding: 0 30px;
+    position: relative;
+}
+
+.about-wrap .about-cont .icon {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 60px;
+    height: 89px;
+    z-index: 1;
+}
+
+.about-wrap .about-cont .title-wrap {
+    padding: 40px 0 5px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.about-wrap .about-cont .title-wrap .title {
+    margin-bottom: 5px
+} 
+
+.about-wrap .about-cont .title-wrap .subtitle {
+    font-size: 20px;
+}
+
+/* Row Company Dinamics */
+.hc--company-dynamics {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: url(../images/news_bg.jpg) no-repeat center center;
+    background-size: cover;
+}
